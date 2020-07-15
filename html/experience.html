@@ -1,0 +1,139 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>20年生平</title>
+
+  <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <!-- experiment.css样式表优先，覆盖index.css样式表中样式 -->
+  <link rel="stylesheet" type="text/css" href="../css/experience.css">
+</head>
+
+<body>
+  <!-- 成长经历布局特点：凝胶布局+flex弹性布局 -->
+  <div id="experience">
+
+    <!-- 导航栏nav -->
+    <nav class="naver">
+      <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
+      <section class="naver-section">
+        <!-- 导航栏共分为五个部分：mywy、introduction、experience、dailylife、friend -->
+          <ul>
+          <li class="">
+            <a href="../index.html" title="我的主页">我的主页</a>
+          </li>
+          <li class="">
+            <a href="../html/introduction.html" title="个人介绍">个人介绍</a>
+          </li>
+          <li class="current">
+            <a href="../html/experience.html" title="20年生平">20年生平</a>
+          </li>
+          <li class="">
+            <a href="../html/dailylife.html" title="日常生活">日常生活</a>
+          </li>
+          <li class="">
+            <a href="../html/friend.html" title="交个朋友">交个朋友</a>
+          </li>
+        </ul>
+        <div class="searchIcon"></div>
+      </section>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- 成长经历experiment -->
+    <!-- 每个页面的内容区都有一个公共类content盛放内容，experiment页面整体凝胶布局：宽度固定，内容居中 -->
+    <div class="content">
+
+      <!-- 成长经历展示内容按网页结构可分成两个部分：h5标题、award-section -->
+      <h5 class="header">成长时间轴</h5>
+      <section class="experience-section">
+        <!-- experiment-section的内容使用无序列表ul容器盛放 -->
+        <!-- ul使用弹性盒将每个<li></li>横向排列在同一行：局部弹性布局 -->
+        <ul class="tl">
+          <li class="description">
+            <!-- 每段描述文字都用一个公共类description来放置 -->
+            <p class="text">
+              <!-- 所有的文字描述都被一个公共类text包住 -->
+              <span>不知不觉已来到人间20载
+              </span>
+            </p>
+          </li>
+          <!-- end of 1 -->
+
+          <li class="description">
+            <p class="text">
+              <span class="time">2000</span>
+              <span>
+                2000年9月18日我出生在湖南益阳
+              </span>
+            </p>
+          </li>
+
+          <li class="description">
+            <p class="text">
+              <span class="time">2006-2010</span>
+              <span>
+                2006年-2010年，我在益阳读小学。
+              </span>
+            </p>
+          </li>
+          <!-- end of 3 -->
+
+          <li class="description">
+            <p class="text">
+              <span class="time">2010</span>
+              <span>因为父亲工作原因，转学到宁乡继续读书。
+              </span>
+            </p>
+          </li>
+          <!-- end of 4 -->
+
+          <li class="description">
+            <p class="text">
+              <span class="time">2010-2018</span>
+              <span>我从未想过会在宁乡住了8年，完成了我的小学中学和高中 
+              </span>
+            </p>
+          </li>
+          <!-- end of 5 -->
+          <li class="description">
+            <p class="text">
+               <span class="time">2018年6月</span>
+              <span>
+               这年是决定我人生的重要时刻，高考。
+              </span>
+            </p>
+          </li>
+          <!-- end of 6 -->
+
+          <li class="description">
+            <p class="text">
+              <span class="time">2018年9月</span>
+              <span>
+                我开始了大学生活
+              </span>
+            </p>
+          </li>
+          <!-- end of 7 -->
+
+          <li class="tl-img">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>
+                <em>2018年至今</em><br>
+                生活仍在继续
+              </span>
+            </p>
+          </li>
+          <!-- end of 8 -->
+        </ul>
+      </section>
+      <!-- end of experiment-section -->
+    </div>
+    <!-- end of content -->
+  </div>
+  <!-- end of experiment -->
+</body>
+
+</html>
