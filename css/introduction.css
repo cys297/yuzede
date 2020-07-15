@@ -1,0 +1,50 @@
+/* 初始化各容器的margin和padding边距为0 */
+table, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* 初始化表格的边距为折叠形式 */
+table {
+  border-collapse: collapse;
+}
+/* setting css */
+/* 凝胶布局：设置网页内容居中，自动调节margin */
+#introduction {
+  width: 100%;
+  margin: 0 auto;
+}
+ .title {
+  height: 32px;
+  font-size: 12px;
+  text-shadow: -3px 3px 3px #ebcb90;
+}
+td{
+  font-size: 14px;
+}
+.information {
+  width: 777px;
+  /* 凝胶布局，固定宽度，使内容居中，自动调节左右margin的距离 */
+  margin: 0 auto;
+  color: #000;
+  /* 防止字符串太长而找不到它的自然断句点时产生溢出 */
+  word-wrap: break-word;
+  text-align: center;
+}
+/* 设置奇数列css */
+td:nth-child(odd) {
+  background-color: #ecf5fc;
+  height: 16px;
+  padding: 5px;
+  line-height: 24px;
+  border: 1px solid #c9c8c8;
+}
+/* 设置偶数列css */
+td:nth-child(even) {
+  background-color: #fff;
+  width: 70px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #c9c8c8;
+}
